@@ -20,6 +20,10 @@ button_menu.bind('<Button-1>', popup_menu)
 menu_bar = Menu(root, tearoff= False)
 menu_bar.add_command(label = 'Open Folder')
 
+image_dp_label = tk.Label(root)
+image_dp_label.pack(anchor= CENTER)
 
+canvas = Canvas(root, height= 50, width= 400)
+canvas.pack(side = BOTTOM, fill= X)
 
 root.mainloop()
