@@ -53,9 +53,17 @@ def load_images():
                                         bg='black', fg='white', highlightthickness=0)
         globals()[img_vars[n]].pack(side=LEFT)
 
+# Create the button_menu for the pop-up menu
+button_menu = Button(root, text="≡", bd=0, font=('Bold', 30), bg='black', fg='white', highlightthickness=0)
+button_menu.pack(side=TOP, anchor=W, pady=20, padx=10)
+button_menu.bind('<Button-1>', popup_menu)
+
 # Create the menu bar and add commands
 menu_bar = Menu(root, tearoff=False)
 menu_bar.add_command(label='Open Folder', command=load_images)
+
+# Attach the menu bar to the root window
+root.config(menu=menu_bar)
 
 # Create the slider frame at the bottom of the window for the thumbnail images
 slider = Frame(root, height=100, bg='black', highlightthickness=0)
