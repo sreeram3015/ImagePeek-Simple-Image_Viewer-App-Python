@@ -12,7 +12,7 @@ ImagePeek is a simple image viewer application built using Python and Tkinter. I
 1. Clone or download this repository to your local machine.
 2. Make sure you have Python and Tkinter installed on your system.
 3. Open a terminal or command prompt and navigate to the downloaded directory.
-4. Run the `main.py` script using Python: `python main.py`.
+4. Run the `ImagePeak.py` script using Python: `python ImagePeak.py`.
 5. Click on the "≡" button at the top-left corner to open the pop-up menu.
 6. Select "Open Folder" from the pop-up menu and choose a directory containing image files.
 7. Thumbnail images of all the valid image files in the selected directory will be displayed at the bottom of the window.
